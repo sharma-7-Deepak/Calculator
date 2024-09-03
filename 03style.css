@@ -1,0 +1,88 @@
+body {
+    position: relative;
+    background-image: url('https://as2.ftcdn.net/v2/jpg/05/25/24/61/1000_F_525246121_DNUPYi9jcRyV6Em1A8Ya3ONDBASU8se6.jpg');
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-size: cover; /* Makes the image cover the whole background */
+    background-position: center; /* Centers the image */
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center; /* Center the calculator horizontally */
+    align-items: center; /* Center the calculator vertically */
+    min-height: 100vh;
+}
+
+.calculator {
+    width: 250px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #ffffff5e;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    
+}
+
+.display {
+    width: 100%;
+    height: 40px;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    text-align: right;
+    border: none;
+    border-radius: 10px;
+    background-color: #f7f7f7;
+}
+
+.keys {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.key {
+    width: 25%;
+    height: 40px;
+    margin: 5px;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+}
+
+.key:hover {
+    background-color: #3e8e41;
+}
+
+.key:active {
+    background-color: #3e8e41;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Animation */
+.key {
+    transition: background-color 0.2s ease-in-out;
+}
+
+.key:hover {
+    animation: pulse 0.5s ease-in-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+/* https://as2.ftcdn.net/v2/jpg/01/76/29/81/1000_F_176298171_NWgiBTQK481lGST4kPrukoiczIcj0PeD.jpg */
